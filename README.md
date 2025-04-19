@@ -1,4 +1,4 @@
-# dbus-shelly-3em-smartmeter
+# dbus-shelly-3em-smartmeter_pv1
 Integrate Shelly 3EM smart meter into [Victron Energies Venus OS](https://github.com/victronenergy/venus)
 
 ## Purpose
@@ -41,30 +41,30 @@ Thats it 😄
 ### Pictures
 ![Tile Overview](img/venus-os-tile-overview.PNG)
 ![Remote Console - Overview](img/venus-os-remote-console-overview.PNG) 
-![SmartMeter - Values](img/venus-os-shelly3em-smartmeter.PNG)
-![SmartMeter - Device Details](img/venus-os-shelly3em-smartmeter-devicedetails.PNG)
+![SmartMeter - Values](img/venus-os-shelly3em-smartmeter_pv1.PNG)
+![SmartMeter - Device Details](img/venus-os-shelly3em-smartmeter_pv1-devicedetails.PNG)
 
 
 
 
 ## Install & Configuration
 ### Get the code
-Just grap a copy of the main branche and copy them to `/data/dbus-shelly-3em-smartmeter`.
+Just grap a copy of the main branche and copy them to `/data/dbus-shelly-3em-smartmeter_pv1`.
 After that call the install.sh script.
 
 The following script should do everything for you:
 ```
-wget https://github.com/fabian-lauer/dbus-shelly-3em-smartmeter/archive/refs/heads/main.zip
-unzip main.zip "dbus-shelly-3em-smartmeter-main/*" -d /data
-mv /data/dbus-shelly-3em-smartmeter-main /data/dbus-shelly-3em-smartmeter
-chmod a+x /data/dbus-shelly-3em-smartmeter/install.sh
-/data/dbus-shelly-3em-smartmeter/install.sh
+wget https://github.com/fabian-lauer/dbus-shelly-3em-smartmeter_pv1/archive/refs/heads/main.zip
+unzip main.zip "dbus-shelly-3em-smartmeter_pv1-main/*" -d /data
+mv /data/dbus-shelly-3em-smartmeter_pv1-main /data/dbus-shelly-3em-smartmeter_pv1
+chmod a+x /data/dbus-shelly-3em-smartmeter_pv1/install.sh
+/data/dbus-shelly-3em-smartmeter_pv1/install.sh
 rm main.zip
 ```
 ⚠️ Check configuration after that - because service is already installed an running and with wrong connection data (host, username, pwd) you will spam the log-file
 
 ### Change config.ini
-Within the project there is a file `/data/dbus-shelly-3em-smartmeter/config.ini` - just change the values - most important is the host, username and password in section "ONPREMISE". More details below:
+Within the project there is a file `/data/dbus-shelly-3em-smartmeter_pv1/config.ini` - just change the values - most important is the host, username and password in section "ONPREMISE". More details below:
 
 | Section  | Config vlaue | Explanation |
 | ------------- | ------------- | ------------- |
@@ -94,4 +94,4 @@ If your single Multi is connected to the Input `A` on the Shelly you don't need 
 
 ## Discussions on the web
 This module/repository has been posted on the following threads:
-- https://community.victronenergy.com/questions/125793/shelly-3em-smartmeter-with-venusos-cerbo-gx.html
+- https://community.victronenergy.com/questions/125793/shelly-3em-smartmeter_pv1-with-venusos-cerbo-gx.html
